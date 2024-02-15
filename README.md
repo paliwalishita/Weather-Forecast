@@ -1,0 +1,1 @@
+Weather-Forecast is a reliable weather forecast app designed to keep you informed with precision and style. With intuitive navigation and a clean interface. Featuring real-time updates and a user-friendly design, It is crafted with HTML, CSS, and JavaScript for a seamless experience and visually appealing forecast app.
