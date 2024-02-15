@@ -1,0 +1,67 @@
+body{
+    background: #eeedec;
+    letter-spacing: 0.2em;
+    font-size: 0.8em;
+}
+.container{
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.container-head{
+    text-align: center;
+    font-family: Arial, Garamond,serif;
+    font-weight: lighter;
+    color: rgb(107, 103, 103);
+}
+.change-location label{
+    text-align: center;
+    display: block;
+    color: rgb(107, 103, 103);
+    margin-bottom: 10px;
+}
+.change-location input{
+    display: block;
+    margin-top: 10px;
+    width: 75%;
+    text-align: center;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgb(139, 137, 137);
+}
+.picture{
+    box-shadow: 7px 7px 7px 7px rgb(191, 194, 196);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.time{
+   width: 100%;
+}
+.detail{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(70, 67, 67);
+    font-family: 'Courier New', monospace;
+    padding-bottom: 20px;
+    
+}
+.city-name{
+    font-size: 18px;
+}
+.weather{
+    font-size: 15px;
+}
+.temp{
+    font-size: 40px;
+    margin-top: 15px;
+}
+.icon img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    background-color: white;
+    object-fit: cover; 
+}
