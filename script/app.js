@@ -2,12 +2,11 @@ const cityForm = document.querySelector('form');
 const card = document.querySelector('.picture');
 const details = document.querySelector('.detail');
 const time = document.querySelector('img.time');
-const icon = document.querySelector('.icon img')
+const icon = document.querySelector('.icon img');
 
 const updateDetails = (data) => {
     const cityDetails = data.cityDetails;
-    
-    //update details
+    //update details 
     details.innerHTML=`
     <h5 class="city-name">${cityDetails.location.name}</h5>
     <div class="weather">${cityDetails.current.condition.text}</div>
@@ -15,6 +14,9 @@ const updateDetails = (data) => {
         <span>${cityDetails.current.temp_c}</span>
         <span>&deg;C</span>
     </div>
+    <div class="precp">Precipitation: ${cityDetails.current.precip_in}%</div>
+    <div class="humid">Humidity: ${cityDetails.current.humidity}%</div>
+    <div class="wind">Wind: ${cityDetails.current.wind_kph}km/h%</div>
     `;
     //update weather icon and picture
     let iconSrc = cityDetails.current.condition.icon;
@@ -50,7 +52,11 @@ cityForm.addEventListener('submit', e => {
 });
 
 if(localStorage.getItem('city')){
+    scrollTo(0,0);
     updateCity(localStorage.getItem('city'))
-    .then(data => updateDetails(data))
+    .then(data => {updateDetails(data)
+    scrollTo(0,0);
+    })
     .catch(err => alert("No matching location found"));
 }
+
