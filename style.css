@@ -44,8 +44,7 @@ body{
     font-weight: bold;
     color: rgb(70, 67, 67);
     font-family: 'Courier New', monospace;
-    padding-bottom: 20px;
-    
+    padding-bottom: 20px;  
 }
 .city-name{
     font-size: 18px;
@@ -64,4 +63,7 @@ body{
     border-radius: 50%;
     background-color: white;
     object-fit: cover; 
+}
+.precp{
+    margin-top:10px;
 }
