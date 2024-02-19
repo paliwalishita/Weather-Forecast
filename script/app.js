@@ -6,7 +6,6 @@ const icon = document.querySelector('.icon img')
 
 const updateDetails = (data) => {
     const cityDetails = data.cityDetails;
-    console.log(cityDetails);
     
     //update details
     details.innerHTML=`
@@ -23,11 +22,8 @@ const updateDetails = (data) => {
    
     let timeSrc = cityDetails.current.is_day == 1 ?'images/day.svg' : 'images/night.svg';
     time.setAttribute('src',timeSrc);
-
+    scrollTo(0, document.body.scrollHeight);
     //remove display none
-   // if(card.classList.hasAttribute('display')){
-     // card.classList.setAttribute('display:""');
-    //}
 }
 
 const updateCity = async (city) => {
